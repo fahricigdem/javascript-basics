@@ -1,0 +1,4 @@
+JAVA SCRIPT 
+Dikkat edilecek Hususlar:
+- groß klein character sensibel
+- 
