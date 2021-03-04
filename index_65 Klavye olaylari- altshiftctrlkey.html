@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+</head>
+<body >
+
+
+	<input onkeydown="islem()" type="text" name="" placeholder="Bir tuşa basın">
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+
+
+		function islem(){
+
+			var x=document.getElementById("sonuc");
+
+			
+			if (event.altKey) {
+
+				x.innerHTML="Alt tuşuna basıldı";
+
+			} else if (event.ctrlKey) {
+
+				x.innerHTML="CTRL tuşuna basıldı";
+
+			} else if (event.shiftKey) {
+
+				x.innerHTML="SHIFT tuşuna basıldı";
+
+			}
+
+		}
+
+
+
+	</script>
+</body>
+</html>

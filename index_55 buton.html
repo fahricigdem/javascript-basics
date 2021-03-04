@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body >
+	
+
+	<button onmousedown="islem()">Mouse' tuşlarından birine tıkla</button>
+
+	<div id="sonuc"></div>
+	
+
+	<script type="text/javascript">
+
+		
+		/*
+		Which / Button
+
+		1 => Mouse sol tuşu
+		2 => Orta Tuş
+		3 => Sağ tuş
+
+		Button
+
+		0 => Mouse sol tuşu
+		1 => Orta Tuş
+		2 => Sağ tuş
+
+		İnternet explorer 8 ve öncesi eski tarayıcılarda
+
+		1 => sol tuş
+		2 = sağ tuş
+		4 => orta tuş
+
+		Buttons
+
+		1 => sol tuş
+		2 = sağ tuş
+		4 => orta tuş
+		8=> back mouse
+		16=> mouse ileri
+
+
+		*/
+
+		function islem(){
+
+			document.getElementById("sonuc").innerHTML="Tıkladığınız Tuş :"+event.buttons;
+
+
+		}
+
+	
+
+			
+
+	</script>
+</body>
+</html>

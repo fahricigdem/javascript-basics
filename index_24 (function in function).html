@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+
+    function aufgabe1 (tu_es){
+        tu_es(20)
+    } 
+    function aufgabe2 (x) {
+        document.write(x)
+    }
+
+    aufgabe1(aufgabe2)
+
+    //aufgabe2 : schreibt was sie genomment hat, hier nimmt 10+20=30
+    //aufgabe1 : ausführt die Function was sie genommen hat
+
+    document.write("<br><br>")
+
+
+    function five (){
+        return 5
+    } 
+
+    function three (){
+        return 3
+    } 
+    function add (x,y) {
+        return x+y
+    }
+
+    document.write(add (five(),three()))
+
+    </script>
+
+
+</body>
+</html>

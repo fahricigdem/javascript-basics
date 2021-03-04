@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+    var a = 10;
+
+    try {
+        document.writeln(a+b)
+    } catch (fehler) {
+        document.writeln("Dein Fehler ist  >>>>>>"+fehler)
+    }
+
+    document.writeln("<br><br><br>")
+
+    try {
+        document.writeln(a+b)
+    } catch (fehler) {
+        document.writeln("Dein Fehler ist  >>>>>>"+fehler)
+    } finally {
+        document.writeln("<br>Keine Sorge: Mensch macht Fehler")
+    }
+
+    document.writeln("<br><br><br>")
+    
+    var b = 10;
+    try {
+        if (a>b){
+            throw "a cannot be bigger than a"
+        }
+
+        if (a==b){
+            throw "a cannot be equal to b"
+        }
+        document.writeln("Ergebnis:",a+b)
+
+    } catch (fehler) {
+        document.writeln("Dein Fehler ist  >>>>>>"+fehler)
+    }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

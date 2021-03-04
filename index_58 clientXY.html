@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body >
+	
+
+
+	<img onclick="islem(event)" src="farkresim.jpg">
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+
+		
+		function islem(event) {
+
+			var x=event.clientX;
+			var y=event.clientY;
+
+			document.getElementById("sonuc").innerHTML="X Koordinatı : "+x+" Y Koordinatı : "+y;
+
+		}
+
+	
+
+			
+
+	</script>
+</body>
+</html>

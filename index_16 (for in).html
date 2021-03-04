@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <script>
+    document.write("string: <br>")
+    
+    var text = "Hallo Welt!"
+    
+    for (i in text) {
+        document.write(text[i])
+    }
+
+    document.write("<br> <br>object: <br>")
+
+    var object_1 = {name:"fahri",nachname:"cigdem"}
+
+    for (i in object_1) {
+        document.writeln(object_1[i])
+    }
+
+    document.write("<br> <br> Array: <br>")
+
+    var liste = new Array ("html","css","javascript")
+
+    for (i in liste) {
+        document.writeln(liste[i])
+    }
+
+
+
+
+    </script>
+
+
+</body>
+</html>

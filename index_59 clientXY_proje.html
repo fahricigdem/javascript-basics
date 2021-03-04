@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body >
+	
+
+
+	<img onclick="islem(event)" src="farkresim.jpg">
+
+	<div id="sonuc"></div>
+
+	<script type="text/javascript">
+
+		
+		function islem(event) {
+
+			var x=event.clientX;
+			var y=event.clientY;
+
+			document.getElementById("sonuc").innerHTML="X Koordinatı : "+x+" Y Koordinatı : "+y;
+
+
+
+			if ((x>228 && x<249) && (y>226 && y<246)) 
+
+			{
+
+				document.getElementById("sonuc").innerHTML="Kalp Bulundu Koordinatları :"+"X Koordinatı : "+x+" Y Koordinatı : "+y;
+
+
+
+			}
+
+		}
+
+		//proje ödevi => resimler arasında ki farkları bulan uygulamayı yapın....
+
+		//x 228 249 y 226 246
+
+
+
+
+
+	</script>
+</body>
+</html>

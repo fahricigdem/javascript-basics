@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+    function auto (mark, color,model){
+            this.mark=mark;
+            this.color=color;
+            this.model=model;
+    }            
+    
+    auto.prototype.km=120500
+
+    var meinAuto =new auto("VW", "grau", 2007);
+
+    console.log(meinAuto)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+        var liste = [1,2,3,4,5,6]
+        document.writeln(liste, "  normal", "  typeof(liste) : ", typeof(liste))
+
+        document.write("<br>delete<br>")
+        delete liste[0]
+        document.writeln("liste : ",liste, "<br>")
+        document.writeln("liste[0] : ",liste[0])
+        document.writeln("<br> liste[1] : ", liste[1])
+
+
+        document.write("<br><br>concat<br>")
+
+        var liste1 = [1,2,3]
+        var liste2 = [4,5,6]
+        document.writeln("<br > liste1 and liste2 : ", liste1, "--", liste2, "<br>")
+
+        liste = liste1.concat(liste2)
+        document.writeln("liste :  ",liste)
+
+        var liste1 = [1,2]
+        var liste2 = [3,4]
+        var liste3 = [5,6]
+        document.writeln("<br > liste1 and liste2 and liste3: ", liste1, "--", liste2, "--", liste3,"<br>")
+        liste = liste1.concat(liste2,liste3)
+        document.writeln("liste :  ",liste)
+
+        
+
+        
+        
+
+    </script>
+
+
+</body>
+</html>

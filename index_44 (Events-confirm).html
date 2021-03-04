@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+
+
+
+
+</style>
+
+</head>
+<body>
+
+		<button id = "confirm" onclick="confirm_it()">Confirm</button>
+		
+		<br><br>
+
+		<b id="result"></b>
+			
+
+<script type="text/javascript">
+		
+		
+		function confirm_it(){
+			var ok = confirm ("Do you confirm?"); 
+			if (ok){
+				document.getElementById("result").innerHTML="corfirmed";
+
+			}else{
+				document.getElementById("result").innerHTML="not corfirmed";
+
+			}
+		}
+
+
+</script>
+</body>
+</html>

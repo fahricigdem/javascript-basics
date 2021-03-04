@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+    var liste_1 = new Array;
+    liste_1 = [1,2]
+    liste_2 = new Array;
+
+    for (i = 0; i<2; i++){
+        liste_2 [i] = new Array()
+    }
+
+    liste_2[0][0] = "bir";
+    liste_2[0][1] = "one"; 
+    liste_2[0][2] = "eins";
+    liste_2[1][0] = "iki";
+    liste_2[1][1] = "two";
+    liste_2[1][3] = "zwei";
+
+    for (i in liste_1){
+        document.writeln(liste_1[i],"<br>")
+        for (j in liste_2[i]){
+            document.writeln(liste_2[i][j],"<br>")
+        }
+        document.write("<br>")
+    }
+
+    </script>
+
+
+</body>
+</html>

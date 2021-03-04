@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+
+    var url = "my url?as=fahri&soyad=cögdüm"
+    document.write("url : ", url, "<br>")
+    
+    encode=encodeURI(url)
+    document.write("encode : ",encode, "<br>")
+    
+    document.write("url : ",url, "<br>")
+
+    decode=decodeURI(encode)
+    document.write("decode von encode: ",decode)
+
+
+    </script>
+
+</body>
+</html>

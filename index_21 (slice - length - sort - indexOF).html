@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+        var liste = [1,2,3,4,5,6]
+        document.writeln("liste : ", liste)
+
+        document.write("<br>slice<br><br>")
+
+        document.write(liste.slice())
+        document.write("<br><br>")
+        document.write(liste.slice(2,4))
+
+        document.write("<br><br>length<br>")
+        document.write(liste.length)
+
+        document.write("<br><br>reverse<br>")
+        liste.reverse()
+        document.write(liste)
+        
+        document.write("<br><br>sort<br>")
+        liste.sort()
+        document.write(liste)
+
+        document.write("<br><br>indexOf<br>")
+        liste[6]=5
+        document.write(liste,"<br>")
+        document.write("indexOf 5 is ", liste.indexOf(5),"<br>")
+        document.write("lastIndexOf 5 is ", liste.lastIndexOf(5))        
+        
+
+    </script>
+
+
+</body>
+</html>

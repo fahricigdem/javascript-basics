@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <div id="zahl1" style="display: inline-block; background-color: red;"></div>
+    <div id="zahl2" style="display: inline-block; background-color: rosybrown;"></div>
+    <div id="zahl3" style="display: inline-block; background-color: royalblue;"></div>
+    <div id="zahl4" style="display: inline-block; background-color: seagreen;"></div>
+    <div id="zahl5" style="display: inline-block; background-color: skyblue;"></div>
+    <div id="zahl6" style="display: inline-block; background-color: springgreen;"></div>
+    <hr>
+
+    <script>
+
+    //einfach
+     for (var i = 0; i <= 7; i++ ){
+        
+        if (i==4){break}
+        //if (i==4){continue;}
+        
+        document.writeln(i)
+        document.write("<br>")
+     }
+
+    //geschachtelte schleife
+
+    for (var i = 0; i <= 3; i++ ){
+        for (var j = 0; j <= 3; j++){
+            document.writeln(i,j,"=",i*j)
+        }
+     }
+
+     
+     document.write("<hr>")
+     
+     //create h1 elements and div block inhalts 
+     for (var i = 1; i <= 6; i++ ){
+         if (i%2!=0){
+            document.writeln("<h"+i+">"+i+" odd"+"</h"+i+">")
+            document.getElementById("zahl"+i).innerHTML=i+": odd";
+            document.write("<br>")
+            } else {
+            document.writeln("<h"+i+">"+i+" even"+"</h"+i+">")
+            document.getElementById("zahl"+i).innerHTML=i+": even";
+            document.write("<br>")
+            }
+     }
+
+
+    </script>
+
+
+</body>
+</html>

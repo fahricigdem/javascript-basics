@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+        var liste = [1,2,3,9,5,6]
+        document.writeln("liste : ", liste)
+        document.write("<br>")
+
+        function Num_control (events) {
+            return events >= 7
+        }
+
+        document.write(liste.some(Num_control))
+
+    </script>
+
+
+</body>
+</html>

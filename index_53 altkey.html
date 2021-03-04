@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+
+</head>
+<body >
+	
+
+	<!--<button onmousedown="islemCtrl(event)">CTRL Tuşuna Basarak Tıkla</button>-->
+
+	<!--<button onmousedown="islemAlt(event)">ALT Tuşuna Basarak Tıkla</button>-->
+
+	<button onmousedown="islemShift()">SHIFT Tuşuna Basarak Tıkla</button>
+
+	<script type="text/javascript">
+
+		/*function islemCtrl(event){
+
+			if (event.ctrlKey) {
+
+				alert("CTRL tuşu basılıyken mouse ile tıkladınız");
+			} else {
+
+				alert("CTRL tuşuna basılmadı");
+			}
+		}*/
+
+
+		function islemShift(){
+
+			if (event.shiftKey) {
+
+				alert("SHIFT tuşu basılıyken mouse ile tıkladınız");
+			} else {
+
+				alert("SHIFT tuşuna basılmadı");
+			}
+		}
+
+
+	</script>
+</body>
+</html>

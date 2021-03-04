@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+    var auto={
+            mark:"VW",
+            color:"gelb",
+            model: 2007,
+            km: 100000,
+            Alter:function(jahr){
+                return jahr - this.model
+            },
+            markModel:function(){
+                return this.mark+ " "+this.model
+            }
+        }
+
+
+        document.write(auto.mark, "<br>");
+        document.write(auto.Alter(2021), "<br>");
+        document.write(auto.markModel());
+   
+    </script>
+
+</body>
+</html>

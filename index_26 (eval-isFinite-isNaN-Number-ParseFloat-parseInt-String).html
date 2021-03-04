@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+
+    var a = 10, b = 50;
+    var c = eval("a+b");
+    document.write(c, "<br><br>")
+
+    var d = isFinite(32);
+    document.write(d, "<br>")
+
+    var e = isFinite("32");
+    document.write(e, "<br>")
+
+    var f = isFinite("32a");
+    document.write(f, "<br>")
+
+    var g = isFinite("abc");
+    document.write(g, "<br><br>")
+
+    var h = isNaN(NaN);
+    document.write(h, " h is kein Nummer <br>")
+
+    var i = isNaN("fds");
+    document.write(i, " i is kein Nummer <br>")
+
+    var j = isNaN(5532);
+    document.write(j, " j is Nummer <br><br>")
+
+    document.write(typeof("123"), "<br>")
+    document.write(typeof(Number("123")), "<br>")
+    document.write(Number(true), Number(false), "<br><br>")
+
+    document.writeln(parseFloat("123.50 abc"),  "<br>")
+    document.writeln(parseFloat("a 123.50 abc"),  "<br><br>")
+
+    document.writeln(parseInt("123 fs"),  "<br>")
+    document.writeln(parseInt("a", 16),  "<br>")
+    document.writeln(parseInt("6", 10),  "<br>")
+    document.writeln(parseInt("88", 9),  "<br>")
+    document.writeln(parseInt("11", 2),  "<br><br>")
+
+    document.writeln(typeof String("122"), "<br>")
+    var date = new Date();
+    document.writeln(String(date), "<br>")
+
+
+
+
+
+    </script>
+
+</body>
+</html>

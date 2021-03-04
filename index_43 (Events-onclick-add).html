@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS Eğitimi</title>
+
+	<style type="text/css">
+
+
+
+
+</style>
+
+</head>
+<body>
+
+		<h1 onclick="change(this)">to change click me</h1>
+
+		<br><br><br><br>
+
+		<button id = "datum" onclick="date()">Date</button>
+		
+		<br><br><br><br>
+
+		<input id="sayi1" type="text" name="" placeholder="1.Sayı">
+		<br>+<br>
+		<input id="sayi2" type="text" name="" placeholder="2.Sayı">
+		<br>=
+		<b id="sonuc"></b>
+		<br>
+		<button id="hesap" onclick="hesapla()">add</button>
+	
+	
+
+	
+
+	<script type="text/javascript">
+		
+		
+		function date(){
+			document.getElementById("datum").innerHTML=Date();
+		}
+
+
+		function change(inhalt){
+			inhalt.innerHTML="  ----  CHANGED!  ---  "
+		}
+
+
+		//2 input oluşturun bu iki inputa girilen sayıların toplamını veren projeyi yapın
+
+		function hesapla(){
+
+			var sayi1=parseInt(document.getElementById("sayi1").value);
+			var sayi2=parseInt(document.getElementById("sayi2").value);
+
+			document.getElementById("sonuc").innerHTML=sayi1+sayi2;
+
+
+		}
+	
+
+</script>
+</body>
+</html>

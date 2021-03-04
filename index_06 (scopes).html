@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        console.log("_______global local scope______")
+        console.log("--------normal variables:")
+        var a=100;
+        function add (){
+            a=130;
+            //var a=120;
+            console.log("a:",a)
+            var b=50;
+            console.log("add:",a+b)
+        }
+        add()
+        console.log("a:",a)
+        //console.log("b:",b)
+
+        
+
+        function referrance (x){
+            x+=5;
+            console.log("referrance",x)
+        }
+        var i=5
+        console.log("erst:",i)
+        referrance(i)
+        console.log("am ende",i)
+
+        console.log("--------listen:")
+
+        function referrance_liste (x){
+            x[0]=9;
+            console.log("referrance_liste",x,typeof (x))
+        }
+        var i=[1,2,3,4]
+        console.log("erst:",i)
+        referrance_liste(i)
+        console.log("am ende:",i)
+
+
+
+    </script>
+</body>
+</html>

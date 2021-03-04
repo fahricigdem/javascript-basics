@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+    var auto={
+
+        mark:"VW",
+        color:"rot",
+        model: 2009,
+        km: 100000
+    }
+
+    console.log(auto);
+
+    function tisch (color,grosse){
+        this.tc=color,
+        this.tg=grosse
+    } 
+
+    meintisch = new tisch ("rot", 120)
+    deintisch = new tisch ("blau", 140)
+
+    console.log(meintisch)
+    console.log(deintisch)
+
+    document.write(meintisch.tc)
+
+    var onur = new Object();
+
+    onur.age=6;
+    onur.grose=120;
+    onur.haar="braun";
+
+    console.log(onur);
+
+    document.write(onur.age)
+
+
+
+
+
+    </script>
+
+</body>
+</html>
